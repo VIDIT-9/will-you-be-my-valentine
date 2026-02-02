@@ -1,58 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: white;
-    font-family: "Nunito", sans-serif;
-    flex-direction: column;
-  }
-  
-  .container {
+    font-family: Arial, sans-serif;
     text-align: center;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #d32f2f;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .yes-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #fa0561;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    background: #ffe6eb;
+    margin-top: 100px;
+}
 
-  .yes-button:hover{
-    background-color: #e03777;
-  }
-  
-  .no-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #d3d3d3;
-    color: black
-    ;
+.buttons {
+    margin-top: 40px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-  }
-  
-  .gif_container img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+}
+
+/* YES button */
+.yes-button {
+    background-color: #ff0055;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+/* NO button */
+.no-button {
+    background-color: #ddd;
+}
+
+/* SHAKE animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+    75% { transform: translateX(-6px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+/* PULSE animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 85, 0.6);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 20px rgba(255, 0, 85, 0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
