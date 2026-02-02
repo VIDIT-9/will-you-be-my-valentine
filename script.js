@@ -1,5 +1,5 @@
 const messages = [
-    "Really Maanii?",
+    "Really Maanii? /n",
     "Yrr ksi si h tu \n NO",
     "Mjhe bura lg rha h",
     "Chup hojaa yrr tu",
