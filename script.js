@@ -19,25 +19,24 @@ const messages = [
 let messageIndex = 0;
 let isTyping = false;
 
-// Typing animation + sound
+// Typing animation
 function typeText(element, text, speed = 45) {
-    element.textContent = "";
+    element.textContent = "";  // clear old text
     let index = 0;
-    const sound = document.getElementById("typeSound");
+
+    // Split text into characters (handles emoji correctly)
+    const chars = Array.from(text);
 
     const typing = setInterval(() => {
-        element.textContent += text.charAt(index);
-
-        sound.currentTime = 0;
-        sound.play();
-
+        element.textContent += chars[index];
         index++;
 
-        if (index === text.length) {
+        if (index >= chars.length) {
             clearInterval(typing);
         }
     }, speed);
 }
+
 
 function handleNoClick() {
     if (isTyping) return;
