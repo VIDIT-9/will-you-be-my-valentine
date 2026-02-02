@@ -1,6 +1,6 @@
 const messages = [
     "Really Maanii?",
-    "Yrr ksi si h tu /n NO",
+    "Yrr ksi si h tu \n NO",
     "Mjhe bura lg rha h",
     "Chup hojaa yrr tu",
     "Pleasee maan jaao naa babbyy",
