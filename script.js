@@ -1,9 +1,9 @@
 const messages = [
-    "Really Maanii? 🙁",
-    "Yrr ksi si h tu 😒 /n NO",
-    "Mjhe bura lg rha h 😔",
+    "Really Maanii?",
+    "Yrr ksi si h tu /n NO",
+    "Mjhe bura lg rha h",
     "Chup hojaa yrr tu",
-    "Pleasee maan jaao naa babbyy 🥺",
+    "Pleasee maan jaao naa babbyy",
     "If you say no, I will be really sad...",
     "I will be very sad...",
     "I will be very very very sad...",
