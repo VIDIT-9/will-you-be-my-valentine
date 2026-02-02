@@ -58,9 +58,12 @@ function handleNoClick() {
 
     // Grow YES button
     const currentSize = parseFloat(
-        window.getComputedStyle(yesButton).fontSize
-    );
-    yesButton.style.fontSize = `${currentSize * 1.3}px`;
+    window.getComputedStyle(yesButton).fontSize
+);
+
+if (currentSize < 40) {
+    yesButton.style.fontSize = `${currentSize * 1.2}px`;
+}
 
     setTimeout(() => {
         isTyping = false;
